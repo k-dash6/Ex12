@@ -1,5 +1,4 @@
-// Copyright 2021 GHA Test Team
-
+// Copyright 2021 dash
 #ifndef INCLUDE_TIMEDDOOR_H_
 #define INCLUDE_TIMEDDOOR_H_
 
@@ -35,15 +34,15 @@ class TimedDoor : public Door {
   bool opened;
  public:
   explicit TimedDoor(int);
-  bool isDoorOpened();
-  void unlock();
-  void lock();
+  bool isDoorOpened() override;
+  void unlock() override;
+  void lock() override;
   void DoorTimeOut();
   void throwState();
 };
 
 class Timer {
-  TimerClient *client;
+  TimerClient * client;
   void sleep(int);
  public:
   void tregister(int, TimerClient*);

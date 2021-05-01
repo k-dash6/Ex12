@@ -1,4 +1,4 @@
-// Copyright 2021 GHA Test Team
+// Copyright 2021 dash
 #include "TimedDoor.h"
 #include <iostream>
 
