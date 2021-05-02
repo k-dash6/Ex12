@@ -34,10 +34,9 @@ void TimedDoor::throwState() {
     std::string s1 = "the door is closed!";
     std::string s2 = "the door is opened!";
     if (!isDoorOpened()) {
-        throw (s1);
-    }
-    else {
-        throw (s2);
+        throw(s1);
+    } else {
+        throw(s2);
     }
 }
 void Timer::sleep(int _t) {
